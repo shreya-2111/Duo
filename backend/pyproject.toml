@@ -1,0 +1,15 @@
+[tool.pyrefly]
+search-path = ["."]
+project-includes = ["**/*.py"]
+project-excludes = ["**/__pycache__", "venv", "**/migrations"]
+python-version = "3.14"
+site-packages-path = ["venv/Lib/site-packages"]
+
+[tool.pyrefly.errors]
+missing-attribute = false
+missing-import = false
+bad-override = false
+bad-override-mutable-attribute = false
+unsupported-operation = false
+bad-assignment = false
+bad-argument-type = false

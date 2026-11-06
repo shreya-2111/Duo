@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1050" viewBox="0 0 360 420">
+<g transform="translate(80 28)">
+<path d="M34 10 H105 C151 10 184 43 184 88 C184 133 151 166 105 166 H34 Z" fill="#DCCEFF"/>
+<path d="M67 43 H105 C130 43 151 63 151 88 C151 113 130 133 105 133 H67 Z" fill="#FFFCFF"/>
+<path d="M67 43 H105 C129 43 148 60 151 83 C130 79 111 89 99 107 C91 120 81 134 67 145 Z" fill="#EAE2FF"/>
+<path d="M67 145 C78 122 94 105 113 98 C130 92 145 94 158 103 C151 122 132 138 108 145 Z" fill="#FFE2D6"/>
+<path d="M88 109 C101 91 121 82 141 86 C135 101 123 113 108 121 C99 126 90 130 80 133 C81 124 83 116 88 109 Z" fill="#D9F2E5"/>
+</g>
+<text x="180" y="290" text-anchor="middle" fill="#7864A6" font-family="DejaVu Sans, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="2">DUO</text>
+<text x="180" y="326" text-anchor="middle" fill="#7864A6" font-family="DejaVu Sans, Arial, sans-serif" font-size="15">Money Managed. Tasks Shared.</text>
+</svg>

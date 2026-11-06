@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: duo-backend
+    runtime: python
+    plan: free
+    region: singapore
+    rootDir: backend
+    buildCommand: chmod +x build.sh && ./build.sh
+    startCommand: gunicorn duo_backend.wsgi:application --bind 0.0.0.0:$PORT --workers 3 --timeout 120
+    healthCheckPath: /api/health/
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: ".onrender.com,localhost,127.0.0.1"
+      - key: CORS_ALLOW_ALL_ORIGINS
+        value: "True"
+      - key: CORS_ALLOW_CREDENTIALS
+        value: "True"
+      # Set DATABASE_URL in Render Dashboard Environment tab from your TiDB Cloud Serverless connection string:
+      # mysql://<username>:<password>@<host>:4000/<database>?ssl_mode=VERIFY_IDENTITY
+      - key: DATABASE_URL
+        sync: false
+
